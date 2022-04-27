@@ -1,0 +1,120 @@
+:root{
+    --first-color: #92a8d1;
+    --second-color: #034f84;
+    --third-color: #f7cac9;
+    --fourth-color:#f7786b;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--third-color);
+    color: var(--second-color);
+    margin: 0;
+}
+header{
+    text-align: center;
+}
+header h1{
+    margin-bottom: 0;
+}
+header p{
+    margin: 0;
+    margin-bottom: 28px;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+.cuadrado-container{
+    background-color: var(--fourth-color);
+    width: 400px;
+    height: 180px;
+    border: 2px solid var(--first-color);
+    border-radius: 6px;
+}
+.cuadrado-title{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#respuestaCuadrado{
+    margin: 0;
+    margin-top: 8px;
+    font-weight: 700;
+}
+.triangulo-container{
+    background-color: var(--fourth-color);
+    width: 400px;
+    height: 180px;
+    border: 2px solid var(--first-color);
+    border-radius: 6px;
+}
+.triangulo-title{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#respuestaTriangulo{
+    margin: 0;
+    margin-top: 8px;
+    font-weight: 700;
+}
+.circulo-container{
+    background-color: var(--fourth-color);
+    width: 400px;
+    height: 180px;
+    border: 2px solid var(--first-color);
+    border-radius: 6px;
+}
+.circulo-title{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#respuestaCirculo{
+    margin: 0;
+    margin-top: 8px;
+    font-weight: 700;
+}
+.label-group{
+    font-size: small;
+}
+.div-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn-group{
+    background-color: var(--second-color);
+    color: var(--first-color);
+    border-radius: 8px;
+    border: 0;
+    margin-top: 20px;
+}
+.btn-group:hover{
+    cursor: pointer;
+}
+.inp-group{
+    width: 40px;
+    border-radius: 8px;
+    margin: 0;
+    background-color: var(--first-color);
+    color: var(--second-color);
+    text-align: center;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    
+}
+footer p{
+    border-bottom: 1px solid var(--first-color);
+}
