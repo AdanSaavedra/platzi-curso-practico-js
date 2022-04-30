@@ -4,10 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="descuento.css" />
     <title>Porcentajes y Descuentos</title>
   </head>
   <body>
-    <h1>Porcentajes y Descuentos</h1>
+    <header>
+      <h1 class="h-title">Porcentajes y Descuentos</h1>
+      <p class="h-paragraph">
+        Este es el segundo taller del curso practico de JavaScript
+      </p>
+    </header>
+    <main>
+      <section class="first-container">
+        <h2 class="h-group">
+          Calcula el precio a pagar de tus productos con descuento
+        </h2>
+
+        <form>
+          <div class="prices-container">
+            <label for="inputPrice">Precio del producto: </label>
+            <input
+              class="inputGroup"
+              id="inputPrice"
+              type="number"
+              oninput="discount()"
+            />
+          </div>
+          <div class="prices-container">
+            <label for="inputDiscount">Porcentaje de descuento: </label>
+            <input
+              class="inputGroup"
+              id="inputDiscount"
+              type="number"
+              oninput="discount()"
+            />
+          </div>
+
+          <p id="result" class="p-result"></p>
+        </form>
+      </section>
+
+      <section class="second-container">
+        <h2 class="h-group">Calcula el precio a pagar utilizando un cupon</h2>
+
+        <form>
+          <div class="prices-container">
+            <label for="inputPrecio2">Precio del producto: </label>
+            <input
+              class="inputGroup"
+              type="number"
+              id="inputPrecio2"
+              oninput="cuponTotal()"
+            />
+          </div>
+          <div class="prices-container">
+            <label for="inputCupon">Ingrese el cupon: </label>
+            <input
+              class="inputGroup"
+              type="text"
+              id="inputCupon"
+              oninput="cuponTotal()"
+            />
+          </div>
+
+          <p id="respCupon" class="p-result"></p>
+        </form>
+      </section>
+      <article class="cupon-info">
+        <p class="info-second">
+          Cupones disponibles: "Adan -50%", "2022 -30%", "Platzi -25%", "Panama
+          -75%", "perro -10%"
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>
+        Hecho con ❤️ por<a href="https://www.linkedin.com/in/adansaavedra/"
+          >Adan Saavedra</a
+        >
+      </p>
+    </footer>
+
     <script src="./descuentos.js"></script>
   </body>
 </html>
